@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel & Co. | Creative Media Service</title>
+    <style>
+        :root { --bg: #f9f9f9; --text: #111; --accent: #333; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+        a { text-decoration: none; color: var(--text); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100;}
+        .brand { font-weight: bold; font-size: 1.2rem; }
+        .nav-links a { margin: 0 15px; font-size: 0.9rem; }
+        .btn { background: var(--text); color: #fff; padding: 10px 20px; border-radius: 5px; font-size: 0.9rem; display: inline-block;}
+        
+        /* Sections */
+        section { padding: 80px 20px; border-bottom: 1px solid #eee; }
+        h1 { font-size: 3.5rem; margin-bottom: 15px; line-height: 1.1; }
+        h2 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.1rem; color: #555; margin-bottom: 40px; }
+        
+        /* Hero */
+        .hero { display: flex; align-items: center; gap: 40px; }
+        .hero-text { flex: 1; }
+        .hero-img { flex: 1; border-radius: 10px; overflow: hidden; }
+        .hero-img img { width: 100%; height: auto; display: block; }
+        .tags { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #777; }
+        
+        /* Grids */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
+        
+        /* Cards */
+        .card { background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee; }
+        .card h3 { margin-top: 10px; margin-bottom: 10px; }
+        .price { font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; display: block;}
+        
+        /* Team */
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .team-member { background: #fff; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #eee;}
+        .initials { width: 60px; height: 60px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; font-weight: bold;}
+        
+        /* Footer */
+        footer { padding: 40px 20px; text-align: center; font-size: 0.9rem; color: #555; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="brand"><a href="#">pixel <i>&amp;</i> co.</a></div>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#packages">Packages</a>
+        <a href="#team">Team</a>
+        <a href="#inquire" class="btn">Start a project</a>
+    </div>
+</nav>
+
+<section id="home" class="container">
+    <div class="hero">
+        <div class="hero-text">
+            <div class="tags">Design • Content • Impact</div>
+            <h1>Bringing ideas to life,<br><em>one frame</em> at a time.</h1>
+            <p>Pixel &amp; Co. is a student-led creative media service making photography, video, design, event documentation, and digital content more accessible for students, organizations, and small businesses.</p>
+            <br>
+            <a href="#portfolio" class="btn" style="background: #eee; color: #111; margin-right: 10px;">See our work</a>
+            <a href="#services" class="btn">Explore services</a>
+        </div>
+        <div class="hero-img">
+            <!-- Uses the actual image link extracted from your site -->
+            <img alt="Creative workspace" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85">
+        </div>
+    </div>
+</section>
+
+<section id="services" class="container">
+    <h2>What we make</h2>
+    <p class="subtitle">Creative solutions built around real student, organization, and small-business needs.</p>
+    <div class="grid-3">
+        <div class="card">
+            <div>📸 01</div>
+            <h3>Photography</h3>
+            <p>Portraits, products, events, school projects, and social-ready visuals.</p>
+        </div>
+        <div class="card">
+            <div>🎬 02</div>
+            <h3>Video Editing</h3>
+            <p>Short-form videos, event highlights, reels, presentations, and promotional edits.</p>
+        </div>
+        <div class="card">
+            <div>✦ 03</div>
+            <h3>Graphic Design</h3>
+            <p>Posters, invitations, social media graphics, promos, and basic branding.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="container">
+    <h2>Made to be seen.</h2>
+    <p class="subtitle">Sample creative directions for Pixel & Co. projects.</p>
+    <div class="grid-2">
+        <div class="card"><strong>Event Documentation</strong><br><small>Coverage • candid moments • highlights</small></div>
+        <div class="card"><strong>Product Photography</strong><br><small>Clean visuals • social-ready shots</small></div>
+        <div class="card"><strong>Portrait Photography</strong><br><small>Personal • polished • natural</small></div>
+        <div class="card"><strong>Graphic Design</strong><br><small>Posters • campaigns • branding</small></div>
+        <div class="card"><strong>Video Editing</strong><br><small>Reels • promos • highlights</small></div>
+        <div class="card"><strong>Digital Content</strong><br><small>Content ideas • layouts • social media</small></div>
+    </div>
+</section>
+
+<section id="packages" class="container">
+    <h2>Simple packages.</h2>
+    <p class="subtitle">Starting points. Final pricing depends on scope and complexity.</p>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Quick Frame</h3>
+            <span class="price">₱300+</span>
+            <ul>
+                <li>Simple graphic or photo edit</li>
+                <li>1 creative output</li>
+                <li>Student-friendly turnaround</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Content Boost</h3>
+            <span class="price">₱500+</span>
+            <ul>
+                <li>Multiple social-ready outputs</li>
+                <li>Basic photo/video editing</li>
+                <li>Flexible revisions</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Custom Project</h3>
+            <span class="price">Let's talk</span>
+            <ul>
+                <li>Event documentation</li>
+                <li>Branding or campaign needs</li>
+                <li>Custom creative direction</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="container">
+    <h2>The people behind it.</h2>
+    <p class="subtitle">Student creatives combining communication, design, storytelling, and production skills.</p>
+    <div class="team-grid">
+        <div class="team-member"><div class="initials">MK</div><strong>Alere, Mary Kassel Joy C.</strong><br><small>Creative Team</small></div>
+        <div class="team-member"><div class="initials">SM</div><strong>Cases, Sheena Marie</strong><br><small>Creative Team</small></div>
+        <div class="team-member"><div class="initials">N</div><strong>Lariosa, Novy</strong><br><small>Creative Team</small></div>
+        <div class="team-member"><div class="initials">CM</div><strong>Mumar, Christine Mae</strong><br><small>Creative Team</small></div>
+        <div class="team-member"><div class="initials">CL</div><strong>Sanchez, Clarisse L.</strong><br><small>Creative Team</small></div>
+    </div>
+</section>
+
+<section id="inquire" class="container" style="text-align: center;">
+    <div class="tags" style="margin-bottom: 10px;">Let's create.</div>
+    <h2>Have an idea?<br>Let's frame it.</h2>
+    <p class="subtitle">Tell us what you need and we'll help shape it into a clear, creative output.</p>
+    <a href="mailto:your-email@example.com" class="btn">Email Us</a>
+</section>
+
+<footer>
+    <strong>pixel &amp; co.</strong><br>
+    Design • Content • Impact<br><br>
+    <small>Student-led creative media service</small>
+</footer>
+
+</body>
+</html>
